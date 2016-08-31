@@ -93,8 +93,11 @@ public class WantedListActivity extends Activity {
         cust_image.clear();
         cust_qb_id.clear();
         cus_tname.clear();
+        SharedPreferences sharedPreferences;
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String cust_ids = sharedPreferences.getString("tbee3_user", "-1");
         String url;
-                        url = Settings.SERVER_URL + "wanted.php";
+                        url = Settings.SERVER_URL + "wanted.php?cust_id="+cust_ids;
         Log.e("url--->", url);
         JsonObjectRequest jsObjRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 

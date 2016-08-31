@@ -106,9 +106,9 @@ public class
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(mContext);
         String my_id = sharedPreferences.getString("tbee3_user", "-1");
         String temp_id = muIds.get(position);
-        if(temp_id.length()<2)
-            temp_id = "0"+temp_id;
+
         Log.e(my_id, temp_id);
+
             swipeLayout.addSwipeListener(new SimpleSwipeListener() {
                 @Override
                 public void onOpen(SwipeLayout layout) {
@@ -118,7 +118,7 @@ public class
             swipeLayout.setOnDoubleClickListener(new SwipeLayout.DoubleClickListener() {
                 @Override
                 public void onDoubleClick(SwipeLayout layout, boolean surface) {
-                    Toast.makeText(mContext, "DoubleClick", Toast.LENGTH_SHORT).show();
+                  //  Toast.makeText(mContext, "DoubleClick", Toast.LENGTH_SHORT).show();
                 }
             });
             v.findViewById(R.id.phone).setOnClickListener(new View.OnClickListener() {

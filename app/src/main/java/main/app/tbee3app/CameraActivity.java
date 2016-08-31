@@ -289,8 +289,8 @@ public class CameraActivity extends Activity {
                     if (flash_on) {
                         Camera.Parameters p = mCamera.getParameters();
                         if (p.getSupportedFocusModes().contains(
-                                Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO)) {
-                            p.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO);
+                                Camera.Parameters.FOCUS_MODE_AUTO)) {
+                            p.setFocusMode(Camera.Parameters.FOCUS_MODE_AUTO);
                         }
                         p.setFlashMode(Camera.Parameters.FLASH_MODE_OFF);
                         mCamera.setParameters(p);
@@ -299,8 +299,8 @@ public class CameraActivity extends Activity {
                     } else {
                         Camera.Parameters p = mCamera.getParameters();
                         if (p.getSupportedFocusModes().contains(
-                                Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO)) {
-                            p.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO);
+                                Camera.Parameters.FOCUS_MODE_AUTO)) {
+                            p.setFocusMode(Camera.Parameters.FOCUS_MODE_AUTO);
                         }
                         p.setFlashMode(Camera.Parameters.FLASH_MODE_TORCH);
                         mCamera.setParameters(p);

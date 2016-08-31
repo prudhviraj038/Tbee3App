@@ -44,7 +44,7 @@
 	<string name="condition_working">Used</string>
 	<string name="condition_not_working">Need to fix</string>
 	<string name="extra_attributes">Extra Attributes</string>
-	<string name="select_condition">Condidition</string>
+	<string name="select_condition">Condition</string>
 	<string name="key_select_category">Category</string>
 	<string name="select_sub_category">Subcategory</string>
 	<string name="add_image">Add Image</string>

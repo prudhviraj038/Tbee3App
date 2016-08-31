@@ -716,7 +716,8 @@ return rootView;
 
                                    } catch (JSONException e) {
                 //    have_products = false;
-                    no_products.setVisibility(View.VISIBLE);
+                        if (product_names.size()==0)
+                        no_products.setVisibility(View.VISIBLE);
                     fragment_progress.setVisibility(View.GONE);
                     e.printStackTrace();
                     mySwipeRefreshLayout.setRefreshing(false);
@@ -734,6 +735,7 @@ return rootView;
                // viewFlipper.setDisplayedChild(0);
                 //display_child = 0;
                 show_error();
+                if (product_names.size()==0)
                 no_products.setVisibility(View.VISIBLE);
                 productlistAdapter.notifyDataSetChanged();
                 mySwipeRefreshLayout.setRefreshing(false);

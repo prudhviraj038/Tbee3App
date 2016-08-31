@@ -383,7 +383,7 @@ return rootView;
 
                                    } catch (JSONException e) {
                 //    have_products = false;
-                    no_products.setVisibility(View.VISIBLE);
+                  //  no_products.setVisibility(View.VISIBLE);
                     e.printStackTrace();
                     productlistAdapter.notifyDataSetChanged();
                     mySwipeRefreshLayout.setRefreshing(false);

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            class="main.app.tbee3app.SquareImageview"
+            android:id="@+id/view6"
+            android:background="@color/filn" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/preview">
+            <SurfaceView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/surfaceviewcam"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view6"
+            android:background="@color/menu_bar_lite"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <main.app.tbee3app.SquareImageview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView28"
+                        android:background="@drawable/square_image_border"
+                        android:layout_margin="5dp"
+                        android:padding="2dp" />
+
+                    <view
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        class="main.app.tbee3app.SquareImageview"
+                        android:id="@+id/view9"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/square_image_border" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/del1"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/delete_image_icon" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <main.app.tbee3app.SquareImageview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView29"
+                        android:layout_weight="1"
+                        android:background="@drawable/square_image_border"
+                        android:layout_margin="5dp"
+                        android:padding="2dp" />
+
+                    <view
+                        class="main.app.tbee3app.SquareImageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view10"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/square_image_border" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/del2"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/delete_image_icon" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <main.app.tbee3app.SquareImageview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView30"
+                        android:layout_weight="1"
+                        android:background="@drawable/square_image_border"
+                        android:layout_margin="5dp" />
+
+                    <view
+                        class="main.app.tbee3app.SquareImageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view11"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/square_image_border" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/del3"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/delete_image_icon" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <main.app.tbee3app.SquareImageview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView31"
+                        android:layout_weight="1"
+                        android:background="@drawable/square_image_border"
+                        android:layout_margin="5dp"
+                        android:padding="2dp" />
+
+                    <view
+                        class="main.app.tbee3app.SquareImageview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/view12"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/square_image_border" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/del4"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/delete_image_icon" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/menu_bar_lite"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/open_gallery_btn"
+                    android:src="@drawable/gallery_icon"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/capture_photo_btn"
+                    android:src="@drawable/add_post_image"
+                    android:layout_weight="1"
+                    android:padding="10dp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/next_btn"
+                    android:src="@drawable/next_icon"
+                    android:layout_weight="1"
+                    android:padding="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flash_icon"
+            android:src="@drawable/flash_logo"
+            android:layout_margin="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="false" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear_icon"
+            android:src="@drawable/cam_clear_icon"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

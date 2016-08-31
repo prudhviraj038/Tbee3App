@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/borders_for_editbox_filter"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:id="@+id/filter_name"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_vertical"
+            android:divider="@drawable/wide_empty_drawable"
+            android:showDividers="middle">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New"
+                android:id="@+id/checkBox"
+                android:button="@drawable/check_box_selector"
+                android:paddingLeft="2dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mint Condition"
+                android:id="@+id/checkBox2"
+                android:button="@drawable/check_box_selector"
+                android:paddingLeft="2dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Used"
+                android:id="@+id/checkBox3"
+                android:button="@drawable/check_box_selector"
+                android:paddingLeft="2dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need to fix"
+                android:id="@+id/checkBox4"
+                android:button="@drawable/check_box_selector"
+                android:paddingLeft="2dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

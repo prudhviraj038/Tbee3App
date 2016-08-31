@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#e34449</color>
+    <color name="primary_trans">#93ff2621</color>
+    <color name="accent">#ff171eff</color>
+    <color name="Wheat">#fffffbb9</color>
+    <color name="white">#ffffffff</color>
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <color name="card_detailing">#eee</color>
+    <color name="transparent">#00000000</color>
+    <color name="product_name_list">#000000</color>
+    <color name="price_color">#e34449</color>
+    <color name="price_color_red">#e34449</color>
+    <color name="menu_bar">#3c3c3c</color>
+    <color name="menu_bar_lite">#3c3c3c</color>
+    <color name="chat_options">#9fcb3e</color>
+    <color name="add_product_details_edit">#e9e9e9</color>
+    <color name="backgroundColor">#E8E8E0</color>
+    <color name="backgroundColorPress">#DBDBD3</color>
+    <color name="red">#FF3B00</color>
+    <color name="red_press">#e34449</color>
+    <color name="dark_gray">#4C535B</color>
+    <color name="dark_gray_press">#ff7e8a97</color>
+
+</resources>

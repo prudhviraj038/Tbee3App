@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app1="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView2"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listView_text" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/filtering_options"
+        android:visibility="gone"
+        android:orientation="horizontal" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/products_view"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:numColumns="2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:id="@+id/no_products_view"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView37"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/splash_logo"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Products In This Category"
+            android:id="@+id/textView30"
+            android:textSize="20sp"
+            android:textColor="@color/primary" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_progress"
+        android:layout_gravity="center_horizontal" />
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        app:pstsTextAllCaps="false"
+        app:pstsUnderlineHeight="0dp"
+        app:pstsIndicatorHeight="0dp"
+        app:pstsIndicatorColor="#e7e7e7"
+        app:pstsShouldExpand="true"
+        app:pstsDividerColor="@android:color/black"
+        app:pstsTabBackground="@drawable/selector_tab"
+        app1:pstsTabSwitch="true"
+        app1:pstsActivateTextColor="@color/primary"
+        app1:pstsDeactivateTextColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#FFFFFF" />
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/pagermain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+</LinearLayout>
